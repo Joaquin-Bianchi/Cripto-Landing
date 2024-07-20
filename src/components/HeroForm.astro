@@ -1,0 +1,99 @@
+---
+import Button from "./Button.astro";
+---
+
+<section class="text-gray-600 body-font relative h-[700px]">
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1641580529558-a96cf6efbc72?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50 mix-blend-multiply">
+    </div>
+  </div>
+
+  <div
+    class="container relative px-5 py-24 mx-auto flex flex-row flex-wrap justify-between"
+  >
+    <div>
+      <h1 class="text-white font-bold text-6xl">
+        Regístrate en Cripto Chile Hoy
+      </h1>
+      <p class="font-bold text-gray-300 mt-5">
+        Y empieza tu camino hacia la Libertad Financiera...
+      </p>
+
+      <ul class="mt-5 flex flex-col gap-4">
+        <li class="text-white font-semibold text-xl">
+          ✅ Administrador de cuenta personal gratuito
+        </li>
+        <li class="text-white font-semibold text-xl">
+          ✅ No se necesita experiencia previa
+        </li>
+        <li class="text-white font-semibold text-xl">
+          ✅ Empieza en 15 minutos
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="lg:w-1/3 md:w-1/2 border-1 border-gray-700 bg-white rounded-xl flex flex-col w-full mt-10 md:mt-0 z-10 shadow-md"
+    >
+      <div class="bg-blue-800 rounded-t-lg p-8">
+        <h2 class="text-white text-3xl mb-1 text-center font-medium title-font">
+          ¡Obtén tu independencia financiera!
+        </h2>
+      </div>
+      <div class="p-8">
+        <div class="relative mb-4">
+          <label for="nombre" class="leading-7 text-sm text-gray-600"
+            >Nombre</label
+          >
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div class="relative mb-4">
+          <label for="apellido" class="leading-7 text-sm text-gray-600"
+            >Apellido</label
+          >
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div class="relative mb-4">
+          <label for="telefono" class="leading-7 text-sm text-gray-600"
+            >Teléfono</label
+          >
+          <input
+            type="number"
+            id="telefono"
+            name="telefono"
+            class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <Button />
+        <p class="text-xs text-gray-500 mt-3">
+          🔒 Tus datos están seguros con nosotros * Monto mínimo de inversión
+          $200.000 pesos
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
